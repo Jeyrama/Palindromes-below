@@ -31,3 +31,23 @@ Number.prototype.palindromeBelow = function(base){
 }
 
 // or
+
+const isPalindrome = str => {
+  let isPal = true,
+      i = 0,
+      j = str.length - 1;
+  while (i < j && isPal) {
+      isPal = str[i] == str[j];
+      i++;
+      j--;
+  }
+  return isPal;
+};
+
+Number.prototype.palindromeBelow = function(base){
+    let result  = [];
+  for (let i = 1; i < this; i++) {
+      if (isPalindrome(i.toString(base))) result.push(i);
+  }
+  return result;
+}
