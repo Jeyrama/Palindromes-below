@@ -14,3 +14,6 @@ and the method should return the following:
   5..palindromeBelow(2)
   => [1, 3]
 */
+
+
+// Solution
