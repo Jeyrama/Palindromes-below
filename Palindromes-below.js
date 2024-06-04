@@ -29,3 +29,5 @@ Number.prototype.palindromeBelow = function(base){
     
   return result;
 }
+
+// or
