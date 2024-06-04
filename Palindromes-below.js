@@ -17,3 +17,15 @@ and the method should return the following:
 
 
 // Solution
+
+Number.prototype.palindromeBelow = function(base){  
+  const result = [];
+  
+  for (let i = 1; i < this; i++) {
+    const numInBase = i.toString(base);
+    
+    if (numInBase === [...numInBase].reverse().join``) result.push(i);
+  }
+    
+  return result;
+}
